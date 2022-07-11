@@ -21,4 +21,4 @@ name : "Agonizing Blast (I)",
             },
             "I add my Intelligence modifier to the damage of every beam of my Eldritch Blast cantrip."
           ]
-        }};
+        });
