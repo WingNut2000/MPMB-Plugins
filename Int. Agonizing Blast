@@ -1,0 +1,24 @@
+//This adds the option to have agonizing blast use the intelligence mod, rather than the charisma mod.
+AddWarlockInvocation("Agonizing Blast (I) (prereq: Eldritch Blast cantrip)", {
+name : "Agonizing Blast (I)",
+        description : desc(["I can add my Intelligence modifier to every hit with my Eldritch Blast cantrip"]),
+        source : [ ],
+        submenu : "[improves Eldritch Blast]",
+        prereqeval : function(v) { return v.hasEldritchBlast; },
+        calcChanges : {
+          atkCalc : [
+            function (fields, v, output) {
+              if (v.baseWeaponName == 'eldritch blast') output.extraDmg += What('Int Mod');
+            },
+            "I add my Intelligence modifier to the damage of every beam of my Eldritch Blast cantrip."
+          ],
+          spellAdd : [
+            function (spellKey, spellObj, spName) {
+              if (spellKey == "eldritch blast") {
+                spellObj.description = spellObj.description.replace("1d10 Force damage", "1d10+" + What("Int Mod") + " Force dmg");
+                return true;
+              };
+            },
+            "I add my Intelligence modifier to the damage of every beam of my Eldritch Blast cantrip."
+          ]
+        }};
