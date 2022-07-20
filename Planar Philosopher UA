@@ -1,0 +1,55 @@
+// Wonders of the Multiverse '22 UA background, "Planar Philospoher", with tweaks, such that each Sigil faction has its own trait and "extra"
+BackgroundList["Planar Philosopher"] = {
+	regExpSearch : /Planar Philosopher/i,
+	name : "Planar Philosopher",
+	source : [X],
+	skills : ["Arcana", "Persuasion"],
+	gold : 10,
+	equipright : [
+		["common clothes", "", 4],
+		["Belt pouch (with coins)", "", 1]
+	],
+	feature : "Conviction",
+	trait : [
+		"The gods are frauds; the unknowable truth lies beyond the veil. (Athar)",
+		"All life springs from the same divine source, ascending and descending in form as the cosmos tests it. (Believers of the Source)",
+		"The multiverse ain’t supposed to make sense; there’s no grand scheme, no deep meaning, no elusive order. The only truth worth finding lies within. (Bleak Cabal)",
+		"Entropy is ecstasy; decay is divine. The verse is supposed to fall apart. We’re just here to keep leatherheads from interfering. (Doomguard)",
+		"We’re all dead - some more so than others. So, we explore our current state with patience, purge our passion, and ascend toward the purity of True Death. (Dustmen)",
+		"The multiverse belongs to those who seize it No one’s to blame for a poor sods fate but the sorry sod himself. (Fated)",
+    "Everything has laws; most are dark. Learn the laws of the multiverse and you can rule it. (Fraternity of Order)",
+    "This ain’t no faction, and nobody tells us what to do. Keep your options open; nobody’s got the key to the truth. (Free League)",
+    "Peace is our goal. But if it takes a little war to get others to set things right, the Harmonium way, so be it. That’s how we’ll reach our golden harmony. (Harmonium)",
+    "Justice is everything. When properly applied, punishment leads to perfection. (Mercykillers)",
+    "The status quo is built on lies and greed. Crush the factions. Break ’em all down and rebuild with what’s left - that’s the only way to find the real truth. (Revolutionary League)",
+    "The multiverse exists because the mind imagines it. The Signers - it could be any Signer - create the multiverse through the power of thought. (Sign of One)",
+    "To know the multiverse, experience it fully. The senses form the path tom truth, for the multiverse doesn’t exist beyond what can be sensed. (Society of Sensation)",
+    "Action without thought is the purest response. Train body and mind to act in harmony, and the spirit will become one with the universe. (Transcendent Order)",
+    "Chaos is truth, order delusion. Embracing the randomness of the multiverse, one learns its secret. (Xaositects)"
+	],
+	extra : [
+		"Select a Sigil Faction",
+		"Athar",
+		"Believers of the Source",
+		"Bleak Cabal",
+		"Doomguard",
+		"Dustemn",
+		"Fated",
+		"Fraternity of Order",
+		"Free League",
+    "Harmonium",
+    "Mercykillers",
+    "Revolutionary League",
+    "Sign of One",
+    "Society of Sensation",
+    "Transcendent Order",
+    "Xaositects",
+	],
+	languageProfs : [2]
+};
+
+//Background feature "Conviction", without the Scion of the Outer Planes feat. changed "orgonization" to "your faction" 
+BackgroundFeatureList["Conviction"] = {
+	description : "Members of your faction provide you free, modest lodging and food at any of their holding or the homes of other faction members.",
+	source : [X]
+};
