@@ -48,8 +48,8 @@ BackgroundList["Planar Philosopher"] = {
 	languageProfs : [2]
 };
 
-//Background feature "Conviction", without the Scion of the Outer Planes feat. changed "orgonization" to "your faction" 
-BackgroundFeatureList["Conviction"] = {
+//Background feature "Conviction", without the Scion of the Outer Planes feat. changed "organization" to "your faction" 
+BackgroundFeatureList["conviction"] = {
 	description : "Members of your faction provide you free, modest lodging and food at any of their holding or the homes of other faction members.",
 	source : []
 };
