@@ -2,7 +2,7 @@
 BackgroundList["Planar Philosopher"] = {
 	regExpSearch : /Planar Philosopher/i,
 	name : "Planar Philosopher",
-	source : [X],
+	source : [],
 	skills : ["Arcana", "Persuasion"],
 	gold : 10,
 	equipright : [
@@ -51,5 +51,5 @@ BackgroundList["Planar Philosopher"] = {
 //Background feature "Conviction", without the Scion of the Outer Planes feat. changed "orgonization" to "your faction" 
 BackgroundFeatureList["Conviction"] = {
 	description : "Members of your faction provide you free, modest lodging and food at any of their holding or the homes of other faction members.",
-	source : [X]
+	source : []
 };
